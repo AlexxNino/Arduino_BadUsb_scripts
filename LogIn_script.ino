@@ -1,22 +1,21 @@
-#include <Keyboard.h>
+
+#include "Keyboard.h"
 void setup() {
   // put your setup code here, to run once:
-
-  Keyboard.begin();
+  
+Keyboard.begin();
   delay(1000);
-  Keyboard.println("username");
+  Keyboard.print("Username"); //put username here or put nothing if just for pass
   delay(1000);
-  Keyboard.press(KEY_TAB);  
-  Keyboard.release(KEY_TAB);
+  Keyboard.write(KEY_TAB); 
   delay(1000);
-  Keyboard.println("Password");
+  Keyboard.print("Password"); //put pass here
   delay(1000);
-  Keyboard.press(KEY_RETURN);
-  Keyboard.release(KEY_RETURN);   
+  Keyboard.write(KEY_RETURN);   
   Keyboard.end();
 
-  
 }
+
 void loop() {
   // put your main code here, to run repeatedly:
 
