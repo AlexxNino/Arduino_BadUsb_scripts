@@ -4,8 +4,8 @@ void setup() {
   // put your setup code here, to run once:
   
 Keyboard.begin();
-  delay(1000);
-  Keyboard.print("Username"); //put username here or put nothing if just for pass
+  delay(4000); //increased delay? sometimes usb skips first print? on first time use on particular pc?
+  Keyboard.print("Username"); //put username here
   delay(1000);
   Keyboard.write(KEY_TAB); 
   delay(1000);
